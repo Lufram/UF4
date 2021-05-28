@@ -1,9 +1,7 @@
 <?xml version="1.0"?>
-<xsl:stylesheet version="1.0" 
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-<xml:output method="xml" version="1.0" encoding="UTF-8" ident="yes"/>
-
-<xsl:template match="/">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
+    <xsl:template match="/">
 <ite>
     <xsl:attribute name="web">
         <xsl:value-of select="/ite/@web"/>
@@ -16,7 +14,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 <nombre><xsl:value-of select="@id"/></nombre>
                 <descripcion><xsl:value-of select="nombre"/></descripcion>
                 <grado><xsl:value-of select="grado"/></grado>
-                <decretoTitulo><xsl:value-of select="decretoTitulo/@año"/></decretoTitulo>
+                <decretoTitulo><xsl:value-of select="decretoTitulo/@ano"/></decretoTitulo>
         </informacionCiclo>
 
         <informacionEmpresa>
