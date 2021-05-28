@@ -2,6 +2,21 @@
 <?xml-stylesheet type="text/xsl" href="index.xsl"?>
 
 <ite nombre="Instituto Tecnológico Edix" web="https://institutotecnologico.edix.com" >
+    <paginas>
+        <pagina>
+            <nombre enlace="index.html">Home</nombre>
+        </pagina>
+        <pagina> 
+            <nombre enlace="#">Noticias</nombre>
+        </pagina>
+        <pagina>
+            <nombre enlace="#">Cursos</nombre>
+        </pagina>
+        <pagina>
+            <nombre enlace="#">Contacto</nombre>
+        </pagina>
+    </paginas>
+
 
     <empresa>Proeduca</empresa>
     <telefono>+34 91 787 39 91</telefono>
@@ -10,21 +25,33 @@
         <profesor>
             <id>1</id>
             <nombre>Félix</nombre>
+            <foto enlace="img/profesores/user.png"></foto>
+            <asignatura>Lenguajes de marca</asignatura>
+            <informacion>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam lectus a tellus facilisis dictum. Vestibulum mattis vulputate sagittis. Aenean rhoncus quam vitae ligula porttitor, nec pellentesque massa cursus. Proin id turpis aliquam, dapibus enim at, efficitur nibh. Donec suscipit.</informacion>
         </profesor>
 
         <profesor>
             <id>2</id>
             <nombre>Raúl</nombre>
+            <foto enlace="img/profesores/user.png"></foto>
+            <asignatura>BBD</asignatura>
+            <informacion>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam lectus a tellus facilisis dictum. Vestibulum mattis vulputate sagittis. Aenean rhoncus quam vitae ligula porttitor, nec pellentesque massa cursus. Proin id turpis aliquam, dapibus enim at, efficitur nibh. Donec suscipit.</informacion>
         </profesor>
 
         <profesor>
             <id>3</id>
             <nombre>Raquel</nombre>
+            <foto enlace="img/profesores/user.png"></foto>
+            <asignatura>Sistemas informáticos</asignatura>
+            <informacion>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam lectus a tellus facilisis dictum. Vestibulum mattis vulputate sagittis. Aenean rhoncus quam vitae ligula porttitor, nec pellentesque massa cursus. Proin id turpis aliquam, dapibus enim at, efficitur nibh. Donec suscipit.</informacion>
         </profesor>
 
         <profesor>
             <id>4</id>
             <nombre>Tomás</nombre>
+            <foto enlace="img/profesores/user.png"></foto>
+            <asignatura>Java</asignatura>
+            <informacion>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam lectus a tellus facilisis dictum. Vestibulum mattis vulputate sagittis. Aenean rhoncus quam vitae ligula porttitor, nec pellentesque massa cursus. Proin id turpis aliquam, dapibus enim at, efficitur nibh. Donec suscipit.</informacion>
         </profesor>
     </profesores>
 
@@ -57,4 +84,79 @@
             <decretoTitulo año="2010" />
         </ciclo>
     </ciclos>
+
+    <cursos>
+        <titulo>NUESTROS PRODUCTOS</titulo>
+               
+        <curso id="01">
+            <imagen enlace="img/logos/React.png"></imagen>
+            <producto>React</producto>
+            <descripcion>Papaar papaar ese hombree ese pedazo de por la gloria de mi madre benemeritaar qué dise usteer de la pradera. A gramenawer mamaar caballo blanco caballo negroorl torpedo.</descripcion>
+            <precio moneda="€">230</precio>
+        </curso>
+        <curso id="02">
+            <imagen enlace="img/logos/mongodb.png"></imagen>
+            <producto>Mongo DB</producto>
+            <descripcion>Condemor te va a hasé pupitaa quietooor papaar papaar ese pedazo de pupita caballo blanco caballo negroorl por la gloria de mi madre por la gloria de mi madre ese pedazo de ese hombree.</descripcion>
+            <precio moneda="$">200</precio>
+        </curso>
+        <curso id="03">
+            <imagen enlace="img/logos/mysql.png"></imagen>
+            <producto>MySQL</producto>
+            <descripcion>La caidita a gramenawer la caidita hasta luego Lucas caballo blanco caballo negroorl fistro al ataquerl ese que llega a peich por la gloria de mi madre.</descripcion>
+            <precio moneda="€">350</precio>
+        </curso>
+        <curso id="04">
+            <imagen enlace="img/logos/Python.png"></imagen>
+            <producto>Python</producto>
+            <descripcion>Va usté muy cargadoo diodenoo pecador te va a hasé pupitaa ese hombree al ataquerl me cago en tus muelas qué dise usteer ese pedazo de.</descripcion>
+            <precio moneda="€">500</precio>
+        </curso>
+        <curso id="05">
+            <imagen enlace="img/logos/JavaScript.png"></imagen>
+            <producto>JavaScript</producto>
+            <descripcion>Lorem fistrum ad jarl diodeno velit ese pedazo de dolor occaecat. De la pradera a wan aliqua jarl officia ese pedazo de te voy a borrar el cerito dolore magna a wan.</descripcion>
+            <precio moneda="€">250</precio>
+        </curso>
+        <curso id="06">
+            <imagen enlace="img/logos/Angular.png"></imagen>
+            <producto>Angular</producto>
+            <descripcion> Al ataquerl está la cosa muy malar papaar papaar la caidita. Aliqua torpedo minim sed te voy a borrar el cerito tiene musho peligro. Commodo ut al ataquerl labore.</descripcion>
+            <precio moneda="€">200</precio>
+        </curso>
+    </cursos>
+
+    <informacion>
+        <infPersonal name="Información Personal">
+            <nombre type="text" nombre="nombre" tamaño="20" content="Nombre:">Nombre:</nombre>
+            <apellidos type="text" nombre="apellidos" tamaño="40" content="Apellidos:">Apellidos:</apellidos>
+            <nacionalidad type="text" nombre="nacionalidad" tamaño="20" content="Nacionalidad:">Nacionalidad:</nacionalidad>
+            <nacido type="date" nombre="nacido" content="Fecha de nacimiento:">Fecha de nacimiento:</nacido>
+            <email type="text" nombre="email" tamaño="30" content="Email:">Email:</email>
+            <sexos sex="si"  content="Sexo:">
+                <sexo type="radio" name="hm" value="h" content="Hombre">
+                    <contenido>Hombre</contenido>
+                </sexo>
+                <sexo type="radio" name="hm" value="m" content="Mujer">Mujer</sexo>
+                <sexo type="radio" name="hm" value="e" content="Ente">Ente</sexo>
+                <sexo type="radio" name="hm" value="f" content="Fantasma">Fantasma</sexo>
+                <sexo type="radio" name="hm" value="a" content="Alien">Alien</sexo>
+            </sexos>
+        </infPersonal>
+        <infAdicional name="Información Adicional">
+            <conocimientos>
+                <titulo>Indique el nivel de conocimientos sobre el lenguaje:</titulo>
+                <conocimiento content="HTML">HTML</conocimiento>
+                <conocimiento content="JAVA">JAVA</conocimiento>
+            </conocimientos>
+            <intereses>
+                <titulo>Indique en que estudios esta interesado:</titulo>
+                <interes content="ciclos">Ciclos Formativos:</interes>
+                <interes>Cursos:</interes>
+            </intereses>
+        </infAdicional>
+
+    </informacion>
+
+
 </ite>

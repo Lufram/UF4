@@ -55,7 +55,7 @@ h2 {
 body {
     font-size: 16px;
     /* 1 rem = 16 px */
-    background-image: url(imagenes/pattern.png);
+    background-image: url(img/pattern.png);
     margin: 0;
 
 }
@@ -258,3 +258,251 @@ td {
     color: #f5f5f5;
 }
 
+.lista-productos {
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-gap: 20px;
+}
+
+@media (max-width: 1000px) {
+    .lista-productos {
+        grid-template-columns: repeat(2,3fr);
+    }
+}
+
+@media (max-width: 700px ) {
+    .lista-productos {
+        grid-template-columns:  repeat(1,1fr);
+    }
+}
+.lista-productos{
+    padding: 0;
+    margin: 10px;
+}
+
+.lista-productos li {
+    list-style: none;
+    padding: 30px;
+}
+
+.imagenCurso {
+height: 100px;
+}
+
+.p-cursos {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 25px;
+padding-left: 10px;
+}
+
+
+.lista-productos button {
+
+    background-color: #78B007;
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    text-align: center;
+    border: none;
+    margin-bottom: 30px;
+
+}
+
+.lista-productos button:hover {
+    background-color: #791616;
+    cursor: pointer;
+}
+
+.lista-productos a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.main-banner {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+    text-align: right;
+}
+
+.main-banner.nosotros {
+    background-image:url(img/nosotros-main-banner.jpg);
+}
+
+.main-banner.cursos {
+    background-image:url(img/demanda2.jpg);
+}
+
+.main-banner.contacto{
+    background-image:url(img/contacto.jpg);
+}
+
+.separador-banner{
+    width: 40%;
+    height: 50px;
+}
+
+.main-banner-info-container{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    left: 60%;
+    color: #ffff;
+    
+}
+
+@media (max-width: 768px) {
+    .main-banner-info-container{
+    width: 70%;
+    left: 30%;
+    }
+}
+
+.main-banner-info-container h3 {
+    padding: 20px;
+    margin: 20px;
+    font-size: 50px;
+}
+.main-banner-info-container p {
+    padding: 20px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.main-banner-button-container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    text-align: right;
+}
+
+.main-banner-button {
+    width: 200px;
+    height: 50px;
+    margin:  10px 40px 10px auto;
+    text-align: center;
+    color: #222;
+    font-family: 'Take Chances', sans-serif;
+}
+
+.main-button{
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color:  rgb(9, 104, 104);
+    border-radius: 6px;
+    border: 2px solid rgb(255, 255, 255);
+  }
+  .main-button:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
+
+  .imagen-nosotros {
+    max-height: 500px;
+    height: auto;
+}
+
+#location h3 {
+    text-align: center;
+}
+
+
+.container{
+    margin: 10px;
+    height: auto;
+
+}
+
+.titleContainer {
+    font-size: 25px;
+    background-color: #b98a13;
+    margin: 10px;
+    padding: 0px;
+    text-align: center;
+}
+
+.titleContainer h2 {
+    padding: 5px;
+    color: #ffff;
+}
+
+.profesores{
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-gap: 10px;
+}
+
+.info {
+    width: calc(100%-10px);
+    height: auto;
+}
+
+
+
+
+.fotoProfesorContainer {
+    margin: auto;
+    margin-top: 50px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: rgb(177, 182, 182);
+    overflow: hidden;
+}
+
+.nombreContainer {
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    height: 50px;
+    background: rgb(235, 240, 235);
+}
+
+
+.nombreContainer h4{
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    font-size: 25px;
+
+}
+.infoProfesorContainer {
+    margin: 15px;
+
+}
+
+
+.infoProfesorContainer h5{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(9, 104, 104);
+
+}
+
+.infoProfesorContainer p{
+    text-justify:unset ;
+    
+}
+
+
+@media (min-width: 768px) {
+    .container{
+        grid-template-columns:  repeat(2,1fr);
+        grid-gap: 10px;
+    }
+
+}
+
+@media (min-width: 1140px) {
+    .container{
+        grid-template-columns:  repeat(4,1fr);
+        grid-gap: 10px;
+    }
+}
